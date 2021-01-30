@@ -1,0 +1,18 @@
+/* 
+    const createBtn = (text = 'No text') => {
+    const btn = document.createElement('button');
+    btn.innerText = text;
+    document.body.appendChild(btn);
+    return btn;
+    
+};
+
+createBtn();
+*/
+
+
+// Slideout Function
+function show() {
+    document.getElementById('sidebar').classList.toggle('active');
+};
+

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/hawkbird.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.seibut {   
+    opacity: 50%;
+    height: 50px;
+    width: 50px;
+    
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+
+    animation: rotateSeibut 15s linear infinite;
+
+}
+
+@keyframes rotateSeibut {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+ 
+.seibut:hover {
+    transition: .8s;
+    -o-transition: .8s;
+    -ms-transition: .8s;
+    -moz-transition: .8s;
+    -webkit-transition: .8s;
+    zoom: 1;
+    filter: alpha(opacity=100%);
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#sidebar {
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    background: #ffc853;
+    left: -600px;
+    transition: .7s;
+    opacity: 50%;
+
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 50px 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 630px;
+    
+}
